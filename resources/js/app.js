@@ -1,7 +1,13 @@
 import './bootstrap';
 import {createApp} from 'vue';
-import App from './components/app.vue';
+import router from './router.js';
 
-createApp(App).mount('#app');
+import App from './components/app.vue';
+import header from './components/layouts/header.vue';
+
+createApp(App)
+    .use(router)
+    .component('v-header', header)
+    .mount('#app');
 
 

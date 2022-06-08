@@ -1,0 +1,5 @@
+<template>
+    <div class="fixed w-full h-15 bg-white">
+
+    </div>
+</template>
